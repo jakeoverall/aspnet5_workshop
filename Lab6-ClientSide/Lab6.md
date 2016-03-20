@@ -1,0 +1,1 @@
+Goto: https://github.com/andrewhanson/aspnet5_clientside
