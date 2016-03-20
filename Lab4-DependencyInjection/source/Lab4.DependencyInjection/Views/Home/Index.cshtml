@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<h1>Scopes</h1>
+
+<div>Singleton: @ViewBag.SingletonService.Message </div>
+<div>InstanceService: @ViewBag.InstanceService.Message </div>
+<div>TransientService: @ViewBag.TransientService.Message </div>
+<div>ScopedService: @ViewBag.ScopedService.Message </div>
+
+<h1>From Aggregate Service</h1>
+
+<div>Singleton: @ViewBag.AggregateService.Singleton.Message </div>
+<div>InstanceService: @ViewBag.AggregateService.Instance.Message </div>
+<div>TransientService: @ViewBag.AggregateService.Transient.Message <span style="color: red">different!</span></div>
+<div>ScopedService: @ViewBag.AggregateService.Scoped.Message <span style="color: green">same as above!</span></div>
